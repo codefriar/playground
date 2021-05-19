@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct playgroundApp: App {
+    init() {
+        print("starting up")
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

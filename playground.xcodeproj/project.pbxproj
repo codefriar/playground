@@ -11,6 +11,9 @@
 		B5EF58D7265556EF00E2EB8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF58D6265556EF00E2EB8D /* ContentView.swift */; };
 		B5EF58D9265556F200E2EB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EF58D8265556F200E2EB8D /* Assets.xcassets */; };
 		B5EF58DC265556F200E2EB8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EF58DB265556F200E2EB8D /* Preview Assets.xcassets */; };
+		B5EF58E52655579400E2EB8D /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF58E42655579400E2EB8D /* Screen.swift */; };
+		B5EF58E72655633F00E2EB8D /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF58E62655633F00E2EB8D /* Screen2.swift */; };
+		B5EF58E92655761500E2EB8D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF58E82655761500E2EB8D /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		B5EF58DB265556F200E2EB8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5EF58DD265556F200E2EB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5EF58DE265556F200E2EB8D /* playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = playground.entitlements; sourceTree = "<group>"; };
+		B5EF58E42655579400E2EB8D /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		B5EF58E62655633F00E2EB8D /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		B5EF58E82655761500E2EB8D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				B5EF58D4265556EF00E2EB8D /* playgroundApp.swift */,
+				B5EF58E82655761500E2EB8D /* Environment.swift */,
 				B5EF58D6265556EF00E2EB8D /* ContentView.swift */,
+				B5EF58E62655633F00E2EB8D /* Screen2.swift */,
+				B5EF58E42655579400E2EB8D /* Screen.swift */,
 				B5EF58D8265556F200E2EB8D /* Assets.xcassets */,
 				B5EF58DD265556F200E2EB8D /* Info.plist */,
 				B5EF58DE265556F200E2EB8D /* playground.entitlements */,
@@ -142,6 +151,9 @@
 			files = (
 				B5EF58D7265556EF00E2EB8D /* ContentView.swift in Sources */,
 				B5EF58D5265556EF00E2EB8D /* playgroundApp.swift in Sources */,
+				B5EF58E72655633F00E2EB8D /* Screen2.swift in Sources */,
+				B5EF58E52655579400E2EB8D /* Screen.swift in Sources */,
+				B5EF58E92655761500E2EB8D /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
