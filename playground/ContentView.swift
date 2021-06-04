@@ -35,7 +35,8 @@ struct MainView: View {
 //            Text("MainView with Window: \(screen.window)")
             Image(nsImage: self.screen.image)
         }.frame(width: 400, height: 400)
-    }
+		.background(Color.black.opacity(0.35))
+   }
 }
 
 
@@ -46,7 +47,9 @@ struct WindowGetter: NSViewRepresentable {
         let view = NSView()
         DispatchQueue.main.async {
             self.window = view.window
-        }
+			self.window?.backgroundColor = .clear
+			self.window?.level = .popUpMenu
+		}
         return view
     }
     

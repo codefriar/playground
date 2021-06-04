@@ -44,12 +44,21 @@ class Screen2: ObservableObject {
                 if let windowCoordinates = self.window.contentView?.bounds {
                     let screenCoordinates = self.window.convertToScreen(windowCoordinates)
                     let q1Toq4Coordinates = self.Q1ToQ4Rect(screenCoordinates)
-                    let image = CGWindowListCreateImage(q1Toq4Coordinates, windowOption, windowId, imageOption)
-                    if let img = image {
-                        self.image = NSImage(cgImage: img, size: .zero)
-                        print(self.image.isValid)
-                    }
-                } 
+
+					guard let image = CGWindowListCreateImage(q1Toq4Coordinates, windowOption, windowId, imageOption),
+						  let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: nil) else {
+						return
+					}
+					let features = detector.features(in: CIImage(cgImage: image))
+					guard let feature = features.first as? CIQRCodeFeature,
+						  let code = feature.messageString else {
+						return
+					}
+					
+					print(code)
+					self.image = NSImage(cgImage: image, size: CGSize(width: image.width, height: image.height))
+					print(self.image.isValid)
+				}
             }
             .store(in: &subscriptions)
         
